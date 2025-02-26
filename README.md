@@ -21,6 +21,7 @@ This example is composed of several projects in C/Rust that depends on each othe
     * Run binary: OK
     * **Run unit test: NOK**
         * Link error about several symbols defined multiple times (`__rust_alloc`, `__rust_dealloc`, `__rust_no_alloc_shim_is_unstable`, etc.)
+        * If the `--allow-multiple-definition` is provided to the linker, it works
     * Run integration test: OK
     * Run example: OK
 * `rust_end_user`

@@ -9,5 +9,8 @@ cargo run --example rust_wrap_example $CARGO_OPTS
 echo "CARGO TEST (lib)"
 cargo test --lib $CARGO_OPTS
 
+echo "CARGO TEST (lib) with --allow-multiple-definition"
+RUSTFLAGS="-Clink-arg=-Wl,--allow-multiple-definition" cargo test --lib $CARGO_OPTS 
+
 echo "CARGO TEST (test)"
 cargo test --test rust_wrap_test $CARGO_OPTS
