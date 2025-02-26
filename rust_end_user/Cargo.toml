@@ -1,0 +1,20 @@
+[package]
+name = "rust_end_user"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "rust_end_user"
+path = "main.rs"
+
+[[test]]
+name = "rust_end_user_test"
+path = "test.rs"
+
+[[example]]
+name = "rust_end_user_example"
+path = "example.rs"
+
+[dependencies]
+rust_wrap = {path="../rust_wrap"}

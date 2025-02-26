@@ -1,0 +1,20 @@
+[package]
+name = "rust_wrap"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "rust_wrap.rs"
+
+[[bin]]
+name = "rust_wrap_main"
+path = "main.rs"
+
+[[test]]
+name = "rust_wrap_test"
+path = "test.rs"
+
+[[example]]
+name = "rust_wrap_example"
+path = "example.rs"
